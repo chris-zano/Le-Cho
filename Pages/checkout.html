@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/checkout.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <div class="container checkout-grid">
+        <section class="form-section">
+            <form action="#">
+                <input type="text" id="name" placeholder="your name here !" required>
+                <input type="tel" id="number" placeholder="phone number (1-234-567-890)" required>
+                <select id="location">
+                    <option value="Accra">Accra</option>
+                    <option value="Kumasi"> Kumasi</option>
+                </select>
+                <div class="payment-option">
+                    <input type="radio" name="cash" id="momo">
+                    <label for="momo">Mobile Money</label>
+                    <input type="radio" name="cash" id="cash">
+                    <label for="cash">Cash on delivery</label>
+                </div>
+                <input type="submit" id="submit" value="Place Order">
+            </form>
+        </section>
+        <section class="cart-section">
+            <h2>Your Cart</h2>
+        </section>
+    </div>
+</body>
+</html>

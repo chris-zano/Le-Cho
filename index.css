@@ -30,11 +30,9 @@ body{
     text-align: center;
     margin-top: 10px;
     color: white;
-
 }
 
 nav{
-    
     margin: 3px;
     text-align: center;
 }
@@ -48,7 +46,6 @@ nav ul li a {
     font-family: notoSansR;
     margin-left: 30px;
     color: white;
-    
 }
 nav ul li a:hover {
     color: red;
@@ -61,7 +58,6 @@ nav ul li a:hover {
     background-attachment: fixed;
     background-size: 100%;
     border-radius: 10px;
-  
 }
 .hero-title {
     color: #56CCF2;
@@ -69,7 +65,6 @@ nav ul li a:hover {
     font-weight: 400;
     font-size: 30px;
     text-align: center;
-
 }
 .hero-special-offer {
     font-family: sans-serif;
@@ -80,21 +75,23 @@ nav ul li a:hover {
     padding-bottom: 1rem;
 }
 .hero-content {
-    width: 50vw;
+    width: 70vw;
     margin-inline: auto;
 }
 
 .hero-content form {
     width: 90%;
     position: relative;
+    margin-inline: auto;
     margin-bottom: 0;
 }
 .hero-content form #search-course {
     height: 50px;
     margin-bottom: 0;
     text-align: left;
+    text-indent: 10px;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .hero-content form .submit-search-course {
     position: absolute;
@@ -185,15 +182,14 @@ nav ul li a:hover {
 
 .main-grid {
     display: grid;
-    grid-auto-flow: dense;
-    grid-auto-columns: 33.33%;
-    gap: 1rem;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 0.5rem;
 }
 
 .card {
     padding: 1.2rem;
     border-radius: 5px;
-    box-shadow: 1px 3px 3px hsl(64, 100%, 77%);
+    box-shadow: 1px 3px 3px rgb(31, 29, 29);
 }
 
 .card > .product-img {
@@ -248,7 +244,7 @@ nav ul li a:hover {
     width: 120px;
     height: 40px;
     border-radius: 5px;
-    box-shadow: 0px 2px 2px #f8f8f8;
+    box-shadow: 1px 3px 3px rgb(31, 29, 29);
 }
 
 .bottom-nav {
@@ -265,9 +261,10 @@ nav ul li a:hover {
     border: none;
     border-radius: 50px;
     margin: auto;
+    margin-top: 2rem;
     font-family: notoSansR;
     font-size: 16px;
-    box-shadow: 0px 2px 2px #f8f8f8;
+    box-shadow: 1px 3px 3px rgb(31, 29, 29);
 
 }
 .menu-link:hover {
@@ -280,7 +277,8 @@ nav ul li a:hover {
 /*-----------FOOTER-----------*/
 footer {
     height: 100vh;
-    padding-inline: 4.2rem;
+    padding-inline: 2rem;
+    padding-block: 2rem;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 50%;
@@ -291,7 +289,7 @@ footer > * {
     margin-block: auto;
 }
 .footer-title {
-    margin-left: 4rem;
+    margin: 1rem;
     display: grid;
     grid-auto-flow: row;
     gap: 1rem;
@@ -304,13 +302,13 @@ footer > * {
     margin: auto;
     font-family: 'Poppins',sans-serif;
     font-size: 7ch;
-    text-shadow: 1px 2px #e66b6b;
+    text-shadow: 1px 2px #1d1919;
 }
 
 .links ul {
     border-radius: 10px;
     background-color: #aca9a9;
-    box-shadow: 0px 3px 3px #e4cb88;
+    box-shadow: 0px 3px 3px #1d1919;
     width: fit-content;
     margin: auto;
 }
@@ -331,17 +329,18 @@ footer form {
 }
 #name {
     margin-top: 1rem;
-    box-shadow: 1px 3px 3px #e48888;
+    box-shadow: 1px 3px 3px #0c0c0c;
 }
 #email {
-    box-shadow: 1px 3px 3px #88e4e4;
+    box-shadow: 1px 3px 3px #0c0c0c;
 }
 #submit {
-    box-shadow: 1px 3px 3px #ce88e4; 
+    box-shadow: 1px 3px 3px #0c0c0c;
     margin-bottom: 1rem;
     width: 100px;
     height: 30px;
     margin: auto;
+    margin-bottom: 20px;
     font-family: 'Poppins',sans-serif;
     font-weight: 600;
     font-size: 2ch;
@@ -366,23 +365,25 @@ textarea {
     outline: none;
     border-radius: 10px;
     text-align: left;
-    box-shadow: 1px 3px 3px #d6e488;   
+    box-shadow: 1px 3px 3px #0c0c0c;
 }
 
 /* Cart*/
 
 .cart {
+    margin-top: 2rem;
     background-color: rgb(235, 229, 229);
+    box-shadow: 1px 3px 3px rgb(31, 29, 29);
     width: 90vw;
     margin-inline: auto;
     padding-block: 1rem;
+    border: thin;
     border-radius: 10px;
 }
 
 .content-section {
     background-color: rgb(182, 226, 182);
     margin: 10px;
- 
 }
 
 .section-header{
@@ -461,55 +462,56 @@ textarea {
 
 .cart-quantity-input {
     height: 34px;
-    width: 70px;
-    border-radius: 5px;
-    border: 1px solid #56CCF2;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    font-size: 1.2em;
-    margin:auto;
-    margin-right: 0;
-}
+        width: 70px;
+        border-radius: 5px;
+        border: 1px solid #56CCF2;
+        background-color: #eee;
+        color: #333;
+        text-align: center;
+        font-size: 1.2em;
+        margin:auto;
+        margin-right: 0;
+    }
 
-.btn-danger {
-    width: 50px;
-    height: 50px;
-    margin:auto;
-    background-color: rgb(226, 46, 46);
-    color: white;
-    font-size: 20px;
-    border-radius: 50%;
-    border: none;
-    margin-left: 60px;
-}
+    .btn-danger {
+        width: 50px;
+        height: 50px;
+        margin:auto;
+        background-color: rgb(226, 46, 46);
+        color: white;
+        font-size: 20px;
+        border-radius: 50%;
+        border: none;
+        margin-left: 60px;
+    }
 
-.btn-danger:hover {
-    background-color: rgb(235, 19, 19);
-    color: white;
-}
+    .btn-danger:hover {
+        background-color: rgb(235, 19, 19);
+        color: white;
+    }
 
 
-.cart-total {
-    font-family: sans-serif;
-    text-align: center;
-    width: fit-content;
-    height: fit-content;
-    float: right;
-    margin-right: 10px;
-    border-radius: 10px;
-}
+    .cart-total {
+        margin-top: 20px;
+        font-family: sans-serif;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+        float: right;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
 
-.cart-total-title {
-    font-family: notoSansR;
-    font-weight: bold;
-    font-size: 2ch;
-    margin-right: 20px;
-}
+    .cart-total-title {
+        font-family: notoSansR;
+        font-weight: bold;
+        font-size: 2ch;
+        margin-right: 20px;
+    }
 
-.cart-total-price {
-    font-family: notoSansR;
-    font-weight: bold;
-    font-size: 2.2em;
-    margin-right: 20px;
-}
+    .cart-total-price {
+        font-family: notoSansR;
+        font-weight: bold;
+        font-size: 2.2em;
+        margin-right: 20px;
+    }
