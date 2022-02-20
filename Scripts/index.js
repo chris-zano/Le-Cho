@@ -148,7 +148,6 @@ $('document').ready(function() {
         `;
         cartContent.append(cartRow);
         }
-        updateTotal
     }
 
 
@@ -166,10 +165,5 @@ $('document').ready(function() {
         localStorage.setItem('array', newArray);
         
     }
-
-    function helloWorld(){
-        console.log('hello world')
-    }
-
     arrayOnLoad()
 })
