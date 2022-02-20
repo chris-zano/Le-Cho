@@ -1,12 +1,6 @@
-if(document.readyState == 'loading'){
-    document.addEventListener('DOMContentLoaded',ready)
-}else {
-    ready()
-}
-
-function ready() { 
+$('document').ready(function() {
     const card = document.querySelector('.container'),
-          cartContent = document.querySelector('.content-section');
+         cartContent = document.querySelector('.content-section');
 
     card.addEventListener('click', addToCart);
     cartContent.addEventListener('click', removefromCart);
@@ -156,7 +150,7 @@ function ready() {
         }
         updateTotal
     }
-    
+
 
     function removeFromStorage(card) {
         let array = getFromStorage()
@@ -173,5 +167,9 @@ function ready() {
         
     }
 
+    function helloWorld(){
+        console.log('hello world')
+    }
+
     arrayOnLoad()
- }
+})

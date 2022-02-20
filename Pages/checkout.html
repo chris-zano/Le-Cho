@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styles/checkout.css">
+    <script src="/node_modules/jquery/dist/jquery.min.js" type="module"></script>
     <title>Checkout</title>
 </head>
 <body>
@@ -17,17 +18,28 @@
                     <option value="Kumasi"> Kumasi</option>
                 </select>
                 <div class="payment-option">
-                    <input type="radio" name="cash" id="momo">
-                    <label for="momo">Mobile Money</label>
+                    <input type="radio" name="cash" id="momo" disabled>
+                    <label for="momo" class="momo" >Mobile Money</label>
                     <input type="radio" name="cash" id="cash">
-                    <label for="cash">Cash on delivery</label>
+                    <label for="cash" class="cash" >Cash on delivery</label>
                 </div>
                 <input type="submit" id="submit" value="Place Order">
             </form>
         </section>
         <section class="cart-section">
             <h2>Your Cart</h2>
+            <div class="cart">
+                <div class="cart-row">
+                    <span class="cart-item-title cart-header cart-column">ITEM</span>
+                    <span class="cart-price-title cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity-title cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="content-section"></div>
+                <div class="cart-total">
+                </div>
+            </div>
         </section>
     </div>
+    <script src="/Scripts/checkout.js" type="module"></script>
 </body>
 </html>
