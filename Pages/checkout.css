@@ -44,7 +44,8 @@ body{
     padding: 1em;
     border: thin;
     border-radius: 5px;
-    box-shadow: 1px 3px 3px rgb(31, 29, 29);
+    background-color: #0c0b0b;
+    box-shadow: 1px 3px 3px #0c0b0b;
 }
 
 form {
@@ -58,7 +59,7 @@ form {
     margin-inline: auto;
     border: thin;
     text-indent: 1rem;
-    box-shadow: 1px 3px 3px #323c41;
+    box-shadow: 1px 3px 3px #0c0b0b;
 }
 
 #name,#number {
@@ -73,7 +74,7 @@ form {
     border: thin;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 1px 3px 3px #292b2c;
+    box-shadow: 1px 3px 3px #0c0b0b;
 }
 
 .momo,.cash {
@@ -90,19 +91,23 @@ form {
     border-radius: 10px;
     margin-inline: auto;
     border: thin;
-    box-shadow: 1px 3px 3px #292b2c;
+    box-shadow: 1px 3px 3px #0c0b0b;
     color: #fff;
     font-family: sans-serif;
     font-size: 2ch;
+}
+#submit:hover,#submit:focus {
+    background-color: #3891da;
 }
 
 
 
 /*Cart Section*/
 .cart-section {
+    background-color: #0c0b0b;
     border: thin;
     border-radius: 5px;
-    box-shadow: 1px 3px 3px rgb(31, 29, 29);
+    box-shadow: 1px 3px 3px #0c0b0b;
 }
 
 .cart-section h2 {
