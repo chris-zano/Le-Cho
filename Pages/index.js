@@ -1,4 +1,13 @@
-$('document').ready(function() {
+const { ready } = require("jquery")
+
+if(document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready)
+}
+else {
+    ready()
+}
+
+function ready() {
     const card = document.querySelector('.container'),
          cartContent = document.querySelector('.content-section');
 
@@ -166,4 +175,4 @@ $('document').ready(function() {
         
     }
     arrayOnLoad()
-})
+}
