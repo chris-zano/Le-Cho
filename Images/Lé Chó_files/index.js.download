@@ -1,3 +1,5 @@
+const { ready } = require("jquery")
+
 if(document.readyState == 'loading'){
     document.addEventListener('DOMContentLoaded', ready)
 }
@@ -14,6 +16,7 @@ function ready() {
     cartContent.addEventListener('click', removefromCart);
 
     function addToCart(e) {
+        console.log(true)
         e.preventDefault();
         if(e.target.classList.contains('addToCart')) {
             const cardDetails = e.target.parentElement.parentElement;
@@ -133,7 +136,8 @@ function ready() {
 
     function arrayOnLoad() {
         let newArr = getFromStorage();
-        var myArr = JSON.parse(newArr);
+        var myArr = JSON.parse(newArr)
+        console.log(myArr)
         for(i = 0; i < myArr.length-1; i++) {
             var img = myArr[i].imgSrc;
             var title = myArr[i].title;
