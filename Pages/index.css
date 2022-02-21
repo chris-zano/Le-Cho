@@ -88,21 +88,7 @@ nav ul li a:hover {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }
-.hero-content form .submit-search-course {
-    position: absolute;
-    right:5px;
-    top:10px;
-    height: 60%;
-    padding: 0;
-    display: block;
-    text-indent: -9999px;
-    width: 40px;
-    background-image: url(/Images/mglass.png);
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-color: #fdfffd;
-    border:none;
-}
+
 
 .bar {
     width: 90vw;
@@ -110,6 +96,8 @@ nav ul li a:hover {
     margin-inline: auto;
     margin-block: auto;
     padding: 20px 0;
+    border-radius: 10px;
+    font-family: sans-serif;
     background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -150,14 +138,8 @@ nav ul li a:hover {
     }
 }
 
-.icon1 {
-    background-image: url(../Images/icon1.png);
-}
-.icon2 {
-    background-image: url(../Images/icon2.png);
-}
-.icon3 {
-    background-image: url(../Images/icon3.png);
+.icon1,.icon2,.icon3 {
+    width: 30px ;
 }
 
 .heading {

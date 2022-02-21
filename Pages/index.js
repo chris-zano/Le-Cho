@@ -6,6 +6,10 @@ else {
 }
 
 function ready() {
+
+    document.addEventListener('submit',function(e){
+        e.preventDefault()
+    })
     
     const card = document.querySelector('.container'),
             cartContent = document.querySelector('.content-section');
