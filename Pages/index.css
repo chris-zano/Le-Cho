@@ -151,13 +151,13 @@ nav ul li a:hover {
 }
 
 .icon1 {
-    background-image: url(/Images/icon1.png);
+    background-image: url(../Images/icon1.png);
 }
 .icon2 {
-    background-image: url(/Images/icon2.png);
+    background-image: url(../Images/icon2.png);
 }
 .icon3 {
-    background-image: url(/Images/icon3.png);
+    background-image: url(../Images/icon3.png);
 }
 
 .heading {
