@@ -2,22 +2,12 @@
     margin: 0;
     padding: 0;
 }
-
-.dark-mode{
-    background-color: #fff;
-    color: black;
-}
-
 body{
-    background-color: #333;
+    background-color: rgb(231, 231, 231);
 }
-
-
 
 @media only screen and (min-width: 1000px)  {
     
-    
-
     .container {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -46,12 +36,12 @@ ul li{
 nav ul li a {
     text-decoration: none;
     text-align: center;
-     font-family: sans-serif;
+    font-family: sans-serif;
     margin-left: 30px;
-    color: white;
+    color: #1a1919;
 }
 nav ul li a:hover {
-    color: red;
+    color: #008cff;
 }
 
 .hero {
@@ -63,7 +53,7 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 .hero-title {
-    color: #56CCF2;
+    color: #016a8d;
     font-family: sans-serif;
     font-weight: 400;
     font-size: 30px;
@@ -72,7 +62,7 @@ nav ul li a:hover {
 .hero-special-offer {
     font-family: sans-serif;
     margin-top: 2px;
-    color: antiquewhite;
+    color: #1a1919;
     text-align: center;
     margin-bottom: 10px; 
     padding-bottom: 1rem;
@@ -83,10 +73,12 @@ nav ul li a:hover {
 }
 
 .hero-content form {
+    box-shadow: 1px 3px 3px #080808;
     width: 90%;
     position: relative;
     margin-inline: auto;
     margin-bottom: 0;
+    border-radius: 10px;
 }
 .hero-content form #search-course {
     height: 50px;
@@ -99,6 +91,7 @@ nav ul li a:hover {
 
 
 .bar {
+    box-shadow: 1px 3px 3px #080808;
     width: 90vw;
     height: fit-content;
     margin-inline: auto;
@@ -131,7 +124,7 @@ nav ul li a:hover {
 
 .bar p {
     padding: 1.5rem;
-    color: white;
+    color: #fdfdfd;
 }
 .icon {
     padding: 1rem;
@@ -153,10 +146,9 @@ nav ul li a:hover {
 .heading {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
-    color: #eee;
+    color: #1a1919;
     padding: 1.5rem;
     text-align: center;
-    text-shadow: 0px 2.5px 1px #e44e52;
 }
 
 
@@ -172,7 +164,7 @@ nav ul li a:hover {
 }
 
 .card {
-    background-color: #131313;
+    background-color: #e0e0e0;
     padding: 1.2rem;
     border-radius: 10px;
     box-shadow: 1px 3px 3px #080808;
@@ -188,12 +180,12 @@ nav ul li a:hover {
     height: 100px;
     margin-inline: auto;
     border-radius: 50%;
-    box-shadow: 0px 3px 3px hsl(0, 0%, 100%);
+    box-shadow: 0px 3px 3px hsl(0, 0%, 9%);
 }
 
 .title-shop-item{
-    color: #d1d1d1;
-     font-family: sans-serif;
+    color: #1a1919;
+    font-family: sans-serif;
     font-size: 28px;
     text-align: center;
 
@@ -202,15 +194,15 @@ nav ul li a:hover {
 .description {
     font-family: sans-serif;
     font-size: 1.5ch;
-    color: #aeccae;
+    color: #398863;
     margin: 5px;
     text-align: center;
 }
 
 .item-price {
-    color: #d1d1d1;
+    color: #1a1919;
     font-weight: 600;
-     font-family: sans-serif;
+    font-family: sans-serif;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -229,7 +221,7 @@ nav ul li a:hover {
     width: 120px;
     height: 40px;
     border-radius: 5px;
-    box-shadow: 1px 3px 3px rgb(31, 29, 29);
+    box-shadow: 1px 3px 3px #1f1d1d;
 }
 .add-to-cart >input:hover {
     background-color: #398fac;
@@ -252,9 +244,9 @@ nav ul li a:hover {
     border-radius: 50px;
     margin: auto;
     margin-top: 2rem;
-     font-family: sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
-    box-shadow: 1px 3px 3px rgb(31, 29, 29);
+    box-shadow: 1px 3px 3px #1f1d1d;
 
 }
 .menu-link:hover {
@@ -286,13 +278,13 @@ footer > * {
 }
 
 .footer-title h2 {
-    color: #e6e6fa;
+    color: #1a1919;
     height: fit-content;
     text-align: center;
     margin: auto;
     font-family: 'Poppins',sans-serif;
     font-size: 7ch;
-    text-shadow: 1px 2px #1d1919;
+    text-shadow: 1px 2px #929292;
 }
 
 .links ul {
@@ -309,9 +301,10 @@ footer > * {
 }
 
 footer form {
+    box-shadow: 1px 3px 3px #080808;
     height: 100%;
     border-radius: 10px;
-    background-color: #302e2e;
+    background-color: #b6b6b6;
     display: grid;
     grid-auto-flow: row;
     gap: 1rem;
@@ -362,8 +355,8 @@ textarea {
 
 .cart {
     margin-top: 2rem;
-    background-color: rgb(235, 229, 229);
-    box-shadow: 1px 3px 3px rgb(31, 29, 29);
+    background-color: #ececec;
+    box-shadow: 1px 3px 3px #141414;
     width: 90vw;
     margin-inline: auto;
     padding-block: 1rem;
@@ -376,7 +369,7 @@ textarea {
 }
 
 .section-header{
-     font-family: sans-serif;
+    font-family: sans-serif;
     font-size: 30px;
     font-weight: 600;
     text-decoration: underline;

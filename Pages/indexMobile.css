@@ -47,7 +47,7 @@
         padding: 0;
     }
     .cart-item-title,.cart-price-title,.cart-quantity-title {
-        font-family: notoSansR;
+         font-family: sans-serif;
         font-size: 20px;
         font-weight: 600;
         margin: auto;
@@ -68,13 +68,13 @@
     
     .cart-item {
         text-indent: 5px;
-        font-family: notoSansR;
+         font-family: sans-serif;
         font-size: 2ch;
         text-align: left;
     }
     
     .cart-price {
-        font-family: notoSansR;
+         font-family: sans-serif;
         font-size: 20px;
         font-weight: 600;
         margin: auto;
@@ -113,14 +113,14 @@
     }
 
     .cart-total-title {
-        font-family: notoSansR;
+         font-family: sans-serif;
         font-weight: bold;
         font-size: 2ch;
         margin-right: 2rem;
     }
 
     .cart-total-price {
-        font-family: notoSansR;
+         font-family: sans-serif;
         font-weight: bold;
         font-size: 20px;
         margin-right: 20px;

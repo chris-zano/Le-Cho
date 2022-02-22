@@ -7,6 +7,17 @@ else {
 
 function ready() {
 
+    const dark = document.getElementById('darkmode');
+    dark.addEventListener('click', () =>{
+        document.getElementById('pagestyle').setAttribute('href', './Pages/darkmode.css');
+    })
+    
+    const light = document.getElementById('lightmode');
+    light.addEventListener('click', () =>{
+        document.getElementById('pagestyle').setAttribute('href', './Pages/index.css');
+    })
+    
+
     document.addEventListener('submit',function(e){
         e.preventDefault()
     })
