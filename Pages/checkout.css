@@ -8,6 +8,21 @@
 a {
     text-decoration: none;
     color: unset;
+    padding: 10px;
+}
+
+nav {
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+    color: rgb(19, 18, 17);
+    font-size: 1rem;
+    border: thin;
+    background-color: #fff;
+    border-radius: 5px;
+}
+nav:hover{
+    background-color: rgb(207, 207, 207);
 }
 
 ul {
@@ -20,6 +35,79 @@ ul li {
 body{
     background-color: #333;
 }
+
+.purchase-info , .message-info{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #ffffff; 
+    width: 70vw;
+    margin: 2rem auto;
+    box-shadow: 1px 3px 3px #0c0b0b;
+}
+
+.message-info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1rem;
+}
+
+.purchase-grid {
+    display: grid;
+}
+
+.info-contact {
+    border-radius: 10px;
+    background-color: blue;
+    height: fit-content;
+    text-indent: 1rem;
+    padding: 1rem;
+    border: thin;
+    box-shadow: 1px 3px 3px #0c0b0b;
+}
+
+.info-cart {
+    border-radius: 10px;
+    background-color: blue;
+    height: fit-content;
+    text-indent: 1rem;
+    padding: 1rem;
+    border: thin;
+    box-shadow: 1px 3px 3px #0c0b0b;
+}
+
+.info-submit {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+.info-submit button {
+    background-color: #fff;
+    width: 100px;
+    height: 35px;
+    border: thin;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px #0c0b0b;
+}
+#loaders {
+    text-align: center;
+}
+#loaders img {
+    width: 150px;
+    margin: 0 auto;
+    display: none;
+}
+
+.info-submit button:hover {
+    background-color: #c2c2c2;
+}
+
 /*container styling*/
 .container {
     width: 95vw;
@@ -77,11 +165,9 @@ form {
     box-shadow: 1px 3px 3px #0c0b0b;
 }
 
-.momo,.cash {
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 2ch;
-    padding: 5px;
+.payment-option {
+    width: fit-content;
+    margin: auto;
 }
 
 #submit {
@@ -116,7 +202,7 @@ form {
     color: #fff;
 }
 .cart {
-    background-color: rgb(235, 229, 229);
+    background-color: #ebe5e5;
     box-shadow: 1px 3px 3px rgb(31, 29, 29);
     width: 90%;
     margin-inline: auto;
@@ -264,4 +350,9 @@ form {
     .cart-row {
         color: #fff;
     }
+
+    /*Purchase Info*/
+    
+
+
 }

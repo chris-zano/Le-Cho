@@ -7,7 +7,12 @@ else{
 
 function ready() {
     const cartContent = document.querySelector('.content-section');
-
+    document.querySelector('form').addEventListener('submit',submitOrder);
+    var orderDetails ={
+        contact: {},
+        paymentMethod: "",
+        cart : []
+    };
     arrayOnLoad()
 
     function getFromStorage() {
@@ -59,9 +64,85 @@ function ready() {
        
         cartContent.append(cartTotal)
     }
-    function clearCart() {
-        localStorage.setItem('array',null)
+    function submitOrder() {
+
+        const name = document.querySelector('#name').value;
+        const phoneNo = document.querySelector('#number').value;
+        const useroLcation = document.querySelector('#location').value;
+        orderDetails.contact.name = name;
+        orderDetails.contact['Phone Number'] = phoneNo;
+        orderDetails.contact.location = useroLcation;
+        loadSummary(orderDetails);
     }
 
-    document.querySelector('form').addEventListener('submit',clearCart)
+    function loadSummary(detail) {
+        const info = document.createElement('div');
+        info.classList.add('purchase-info');
+        info.classList.add('purchase-grid')
+        info.innerHTML = `
+        <div class="info-contact">
+            <p>Name: ${detail.contact.name}</p>
+            <p>Tel: ${detail.contact['Phone Number']}</p>
+            <p>Location: ${detail.contact.location}</p>
+            <p>Payment Mode: Cash On delivery </p>
+            <p>Total: total</p>
+        </div>
+        <div class="info-cart">
+            <li>item</li>
+            <li>item2</li>
+        </div>
+        <div class="row" id="loaders">
+            <img id="spinner" src="/Images/spinner.gif" width="150">
+        </div>
+        <div class="info-submit">
+            <button id="confirm-btn">SUBMIT</button>
+        </div>
+        `;
+        document.querySelector('body').append(info);
+        const confirmBtn = document.getElementById('confirm-btn');
+            confirmBtn.addEventListener('click',loadSpinners);
+    }    
+
+    function loadSpinners() {
+        // show the spinner
+        const spinner = document.querySelector('#spinner');
+        spinner.style.display = 'block';
+
+        // Show the image
+        const sendEmailImg = document.createElement('img');
+        sendEmailImg.src = '/Images/mail.gif';
+        sendEmailImg.style.display = 'block';
+
+        // Hide Spinner then show the send Email image
+        setTimeout(function() {
+            // Hide the spinner
+            spinner.style.display = 'none';
+
+            // Show the image
+            document.querySelector('#loaders').appendChild( sendEmailImg );
+
+            // After 5 seconds, hide the image 
+            setTimeout(function() {
+                sendEmailImg.remove();
+                setTimeout(function() {
+                    sendMessage();
+                    setTimeout(function() {
+                        window.location.reload()
+                        localStorage.setItem('array',null)
+                    },10000)
+                },1000)
+            }, 5000);
+        }, 3000 );
+    } 
+
+
+    function sendMessage() {
+        const sendmessage = document.createElement('div');
+        sendmessage.classList.add('message-info');
+        sendmessage.innerHTML = `
+        <p>Your order has been received pending cofirmation.<br>
+        You will be contacted to comfirm your order..stay put</p>
+        `
+        document.querySelector('body').append(sendmessage);
+    }
 }
