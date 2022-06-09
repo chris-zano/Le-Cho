@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="pagestyle" rel="stylesheet" href="./Pages/index.css">
-    <link rel="stylesheet" href="./Pages/indexMobile.css">
+    <link id="pagestyle" rel="stylesheet" href="./style/index.css">
     <style>
         .hero-content form .submit-search-course {
             position: absolute;
@@ -25,27 +24,14 @@
     </style>
     <title>Lé Chó</title>
 </head>
-<body>
+<body class="no-select">
     <header>
         <h1 class="logo">Lé Chó</h1>
-        <nav>
-            <ul>
-                <li><a href="./Pages/menu.html">Menu</a></li>
-                <li><a href="#" id="darkmode">LightMode</a></li>
-                <li><a href="#" id="lightmode">DarkMode</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <div class="hero">
             <h2 class="hero-title">Place an Order Now</h2>
-            <p class="hero-special-offer">Special Offer- any order [ Ghc 25 ]</p>
-            <div class="hero-content">
-                <form action="#" id="search" method="post" class="form">
-                    <input class="u-full-width" type="text" placeholder="Find what you want" id="search-course">
-                    <button id="submit-search-course" class="submit-search-course" >Search</button>
-                </form>
-            </div>
+            <p class="hero-special-offer">Special Offer- any order [ Ghc 5 ]</p>
         </div>
         <div class="bar">
             <div class="row">
@@ -66,7 +52,13 @@
                 </div>
             </div>
         </div><br>
-        <h1 id="heading" class="heading">Today's Special</h1>
+        <h2 id="heading" class="heading">Today's Special</h2>
+        <div class="cart-hover">
+            <a href="#cart">
+                <img src="./Images/cartImg.png" alt="cart" width="39px">
+                <small id="cart-counter"></small>
+            </a>
+        </div>
         <div class="container main-grid">
             <div class="card">
                <div class="product-img">
@@ -201,20 +193,20 @@
                 </div> 
             </div>
         </div>
-        <div class="cart">
+        <div class="cart" id="cart">
             <h2 class="section-header">CART</h2>
             <div class="cart-row">
                 <span class="cart-item-title cart-header cart-column">ITEM</span>
                 <span class="cart-price-title cart-header cart-column">PRICE</span>
                 <span class="cart-quantity-title cart-header cart-column">QUANTITY</span>
             </div>
-            <div class="content-section"></div>
+            <div class="content-section" id="content-section"></div>
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
                 <span class="cart-total-price">GHC 0</span>
             </div>
             <div class="bottom-nav">
-                <a href="Pages/checkout.html">
+                <a href="./Pages/checkout.html">
                     <input type="button" class="menu-link" value="CHECKOUT">
                 </a>
             </div>
@@ -244,14 +236,17 @@
             </div>
         </div>
         <div class="form">
-            <form action="#">
+            <form action="#" id="reach-out-form">
                 <input type="text" placeholder="Surname FirstName" id="name" required>
                 <input type="email" id="email" placeholder="email@example.com" required>
                 <textarea id="message" cols="30" rows="10"></textarea>
+                <div class="row" id="loaders">
+                    <img id="spinner" src="/Images/spinner.gif" width="150">
+                </div>
                 <input type="submit" id="submit" value="SEND">
             </form>
         </div>
     </footer>
-    <script src="Pages/index.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
