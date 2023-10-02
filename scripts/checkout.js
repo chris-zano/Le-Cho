@@ -91,7 +91,7 @@ function ready() {
             
         </div>
         <div class="row" id="loaders">
-            <img id="spinner" src="/Images/spinner.gif" width="150">
+            <img id="spinner" src="../Images/spinner.gif" width="150">
         </div>
         <div class="info-submit">
             <button id="confirm-btn">SUBMIT</button>
